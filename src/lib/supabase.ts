@@ -43,6 +43,8 @@ export type Database = {
           description: string
           discount_type: 'percentage' | 'fixed'
           discount_value: number
+          quantity: number
+          min_purchase_amount: number
           created_at: string
         }
         Insert: {
@@ -53,6 +55,8 @@ export type Database = {
           description: string
           discount_type: 'percentage' | 'fixed'
           discount_value: number
+          quantity: number
+          min_purchase_amount: number
           created_at?: string
         }
         Update: {
@@ -63,6 +67,8 @@ export type Database = {
           description?: string
           discount_type?: 'percentage' | 'fixed'
           discount_value?: number
+          quantity?: number
+          min_purchase_amount?: number
           created_at?: string
         }
       }

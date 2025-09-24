@@ -10,6 +10,7 @@ import ForgotPasswordPage from './pages/ForgotPasswordPage'
 import Dashboard from './pages/Dashboard'
 import GamesPage from './pages/GamesPage'
 import GamePlayer from './pages/GamePlayer'
+import GameSelector from './pages/GameSelector'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/game/:gameId" element={<GamePlayer />} />
+          <Route path="/game-selector" element={<GameSelector />} />
           
           <Route
             path="/dashboard"
